@@ -64,8 +64,13 @@ func main() {
 	// study.MapDemo()				// 集合
 	// study.ConcurrentDemo()		// 并发
 	// study.ChannelWithBuffer()	// 有缓冲区的通道
-	study.ChannelDemo()			// 通道
-	
+	// study.ChannelDemo()			// 通道
+
+	// study.DeferDemo()			// defer例子（defer后的语句在函数结束或发生 panic 后执行，使用后进先出的方式执行）
+	// study.ClassDemo()			// 模拟一个类
+	// study.InterfaceDemo()		// interface 的用法
+
+	study.StudentClass()
 	
 
 

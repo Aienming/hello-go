@@ -120,6 +120,8 @@ func Pointer() {
 
 
 /*********************** 结构体部分 **********************************/
+// 结构体在 go 中类似于 class 类，我理解为对象， 见 ./study/class.go
+// func (s struct) functionName() {}	这个函数可以理解为 struct 的方法
 
 // 使用 type strucr 定义结构体
 type person struct {
@@ -163,7 +165,7 @@ func Struct() {
 type canJson struct {
 	Name string
 	Age int
-	Height int `json:"height"`	// 标记转化为json时 Height 对应的键名是 height
+	Height int `json:"height"`	// 标记转化为json时 Height 对应的键名是 height，这种语法叫 tag
 	Weight int `json:"-"`		// 标记转化为json时 Weight 被忽略
 }
 // 结构体转化为json
@@ -351,15 +353,18 @@ func MapDemo() {
 
 /*********************** 接口 ****************************************/
 
+// Go 语言提供了另外一种数据类型即接口，它把所有的具有共性的方法定义在一起，任何其他类型只要实现了这些方法就是实现了这个接口。
+
 
 
 
 /*********************** 接口结束 ************************************/
 
+// 见 ./study/class.go
 
 /*********************** 其他 ****************************************/
 
-func TypeTranclate() {
+func TypeTranslate() {
 	var a int32 = 10
 	var b int64
 	b = int64(a)	// 显式类型转换，因为变量 b 已被声明为 int64 类型，此使 b = a 会报错，因为 a 是 int32 类型
