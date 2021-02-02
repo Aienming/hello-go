@@ -72,7 +72,7 @@ func ClassDemo() {
 
 // 另外一个不同的写法
 
-type sale interface {
+type Sale interface {
 	price() string
 }
 
@@ -104,11 +104,16 @@ func (c Chevrolet) price() string {
 
 func InterfaceDemo() {
 	// 声明一个接口类型的变量
-	var sale sale
+	var sale Sale
 
 	sale = new(Ford)
 	
 	sale.price()
+
+	// 声明一个变量的静态类型是接口，具体实现是结构体类型
+	var cc Sale = Ford{"henry ford"}
+
+	cc.price()
 }
 
 /*

@@ -53,6 +53,9 @@ func circleDemo() {
 
 func main() {
 
+	println("HELLO")
+	fmt.Println("HELLO")
+
 	// circleDemo()
 	// varibleScope()
 
@@ -68,9 +71,10 @@ func main() {
 
 	// study.DeferDemo()			// defer例子（defer后的语句在函数结束或发生 panic 后执行，使用后进先出的方式执行）
 	// study.ClassDemo()			// 模拟一个类
-	// study.InterfaceDemo()		// interface 的用法
+	study.InterfaceDemo()		// interface 的用法
 
-	study.StudentClass()
+	// study.FakeMain()
+	// study.StudentClass()
 	
 
 
